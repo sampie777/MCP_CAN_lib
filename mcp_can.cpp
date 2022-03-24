@@ -606,7 +606,7 @@ INT8U MCP_CAN::mcp2515_init(const INT8U canIDMode, const INT8U canSpeed, const I
             mcp2515_modifyRegister(MCP_RXB1CTRL, MCP_RXB_RX_MASK,
             MCP_RXB_RX_ANY);
             break;
-/*          The followingn two functions of the MCP2515 do not work, there is a bug in the silicon.
+/*          The followingn two functions of the MCP2515 do not work, there is a bug in the silicon. */
             case (MCP_STD): 
             mcp2515_modifyRegister(MCP_RXB0CTRL,
             MCP_RXB_RX_MASK | MCP_RXB_BUKT_MASK,
@@ -614,7 +614,7 @@ INT8U MCP_CAN::mcp2515_init(const INT8U canIDMode, const INT8U canSpeed, const I
             mcp2515_modifyRegister(MCP_RXB1CTRL, MCP_RXB_RX_MASK,
             MCP_RXB_RX_STD);
             break;
-
+/*
             case (MCP_EXT): 
             mcp2515_modifyRegister(MCP_RXB0CTRL,
             MCP_RXB_RX_MASK | MCP_RXB_BUKT_MASK,

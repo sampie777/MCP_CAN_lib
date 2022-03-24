@@ -56,7 +56,7 @@
 
 #define MCP_RXB_RX_ANY      0x60
 #define MCP_RXB_RX_EXT      0x40
-#define MCP_RXB_RX_STD      0x20
+#define MCP_RXB_RX_STD      0x00
 #define MCP_RXB_RX_STDEXT   0x00
 #define MCP_RXB_RX_MASK     0x60
 #define MCP_RXB_BUKT_MASK   (1<<2)
